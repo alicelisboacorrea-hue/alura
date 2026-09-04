@@ -51,22 +51,23 @@
     <img src= "cinema.png"> 
    <div>
    <h2>MEU PRIMEIRO POST</h2>
-  <p>POR:ALICE GABRIELLE</p>
+  <p class=" artigo-autor>POR:ALICE GABRIELLE</p>
   <p>Boas Vindas ao meu novo blog! Aqui vou compartilhar 
    informações sobre o mundo do cinema!</p>
-      </main>
-    </body>
-  </html>
    <button>❤️​  <span>0</span></button>
    <button>👍​​  <span>0</span></button>
-  
+  <div>
+     <article>
+      <article>
 
-
-   
+    </main>
+   </body>   
 <script>
-   const botao = document.querySelector("button");
- botao.addEventListener("Click", botaoClicado);
-
+   const botoes = document.querySelectorA11("button");
+   
+   botoes.forEach(function(botao){
+      let curtiu = false;
+    botao.addEventListener("click",botaoClicado);
  function botaoClicado(){
      console.log("fui Clicado");
  }
