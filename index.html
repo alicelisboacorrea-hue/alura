@@ -67,8 +67,10 @@
    
    botoes.forEach(function(botao){
       let curtiu = false;
-    botao.addEventListener("click",botaoClicado);
- function botaoClicado(){
+    botao.addEventListener("click",botaoClicado),function () {
+      const contador = botao.querySelector("span");
+      let numeroatual = parseInt(contador.textContent);
+      contador.textContent = numeroAtual + 1;
      console.log("fui Clicado");
  }
  
