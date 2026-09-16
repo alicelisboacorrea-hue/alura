@@ -68,7 +68,7 @@
    
    botoes.forEach(function(botao){
       let curtiu = false;
-    botao.addEventListener("click",botaoClicado),function () {
+    botao.addEventListener("click",function () {
       const contador = botao.querySelector("span");
       let numeroAtual = parseInt(contador.textContent);
 
