@@ -49,7 +49,17 @@
 </header>
 <main> 
 
-    <article>
+  
+     console.log("fui Clicado");
+      });
+  });
+   </script>
+</body>
+</html>>
+
+
+   
+  <article>
     <img src= "cinema.png"> 
    <div>
    <h2>MEU PRIMEIRO POST</h2>
@@ -74,12 +84,29 @@
 
          
       contador.textContent = numeroAtual + 1;
-     console.log("fui Clicado");
-      });
-  });
-   </script>
-</body>
-</html>>
+         
+     <article>
+    <img src= "cinema.png"> 
+   <div>
+   <h2>MEU PRIMEIRO POST</h2>
+  <p class=" artigo-autor ">POR:ALICE GABRIELLE</p>
+  <p>Boas Vindas ao meu novo blog! Aqui vou compartilhar 
+   informações sobre o mundo do cinema!</p>
+   <button>❤️​  <span>0</span></button>
+   <button>👍​​  <span>0</span></button>
+   </div>
+    </article>
 
-
+    </main>
+   </body>   
+<script>
+   const botoes = document.querySelectorAll("button");
    
+   botoes.forEach(function(botao){
+      let curtiu = false;
+    botao.addEventListener("click",function () {
+      const contador = botao.querySelector("span");
+      let numeroAtual = parseInt(contador.textContent);
+
+         
+      contador.textContent = numeroAtual + 1;
