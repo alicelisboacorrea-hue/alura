@@ -71,3 +71,34 @@
   </script>
 </body>    
 </html>
+<img src="cinema.png" alt="Ilustração sobre cinema"> 
+<div class="conteudo-texto">
+      <h2>MEU SEGUNDO POST</h2>
+    <p class="artigo-autor">Por:ALICE GABRIELLE</p>
+      <p> ULTIMATO ENCORE: O relançamento de Vingadores Ultimato (Encore) consegue novamente o titulo da maior bilheteria de todos os tempos,
+     ao ultrapassar Avatar (2009) e irmãos russo agradecem.
+      Com o lançamento de Vingadores:Doutor Destino,no dia 24 de Setembro a Marvel deciciu relançar Vingadores Ultimato para a alegria dos fãs.</p>
+    </div>
+ </article>
+    <div class="botoes-container">
+      <button type="button">❤️ <span>0</span></button>
+      <button type="button">👍 <span>0</span></button>
+           </div>
+        </main>
+ 
+
+<script>
+      const botoes = document.querySelectorAll("button");
+
+      botoes.forEach(function (botao) {
+        botao.addEventListener("click", function () {
+          let spanTexto = botao.querySelector("span");
+          let valorAtual = parseInt(spanTexto.textContent);
+
+          spanTexto.textContent = valorAtual + 1;
+          });
+      });
+  </script>
+</body>
+</html>
+
